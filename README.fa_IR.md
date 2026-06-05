@@ -70,7 +70,15 @@
 ## شروع سریع
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/ice-juice/3x-ui/main/install.sh)
+```
+
+اگر `curl` نصب نیست، ابتدا آن را نصب کنید یا از `wget` استفاده کنید:
+
+```bash
+apt update && apt install -y curl
+# یا
+bash <(wget -qO- https://raw.githubusercontent.com/ice-juice/3x-ui/main/install.sh)
 ```
 
 در حین نصب، یک نام کاربری، رمز عبور و مسیر دسترسی تصادفی تولید می‌شود. پس از نصب، دستور `x-ui` را اجرا کنید تا منوی مدیریت باز شود؛ در آنجا می‌توانید سرویس را شروع/متوقف کنید، اطلاعات ورود خود را ببینید یا بازنشانی کنید، گواهی‌های SSL را مدیریت کنید و کارهای دیگری انجام دهید.

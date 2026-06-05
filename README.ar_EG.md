@@ -70,7 +70,15 @@
 ## البدء السريع
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/ice-juice/3x-ui/main/install.sh)
+```
+
+إذا لم يكن `curl` مثبتًا، فثبّته أولًا أو استخدم `wget`:
+
+```bash
+apt update && apt install -y curl
+# أو
+bash <(wget -qO- https://raw.githubusercontent.com/ice-juice/3x-ui/main/install.sh)
 ```
 
 أثناء التثبيت، يتم إنشاء اسم مستخدم وكلمة مرور ومسار وصول عشوائية. بعد التثبيت، شغّل `x-ui` لفتح قائمة الإدارة، حيث يمكنك بدء/إيقاف الخدمة، وعرض أو إعادة تعيين بيانات تسجيل الدخول، وإدارة شهادات SSL، والمزيد.
