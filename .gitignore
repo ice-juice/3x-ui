@@ -16,6 +16,7 @@ tmp/
 backup/
 bin/
 dist/
+docs/site/.vitepress/cache/
 !web/dist/
 web/dist/*
 !web/dist/.gitkeep
