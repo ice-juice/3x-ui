@@ -1,12 +1,8 @@
-# Reality 入站配置 / Reality Inbound Configuration
+# Reality Inbound Configuration
 
 ::: tip Recommended baseline
-Reality 入站的推荐基础组合是 `VLESS + RAW/TCP + REALITY + xtls-rprx-vision`。
-
-Recommended baseline: `VLESS + RAW/TCP + REALITY + xtls-rprx-vision`.
+Use `VLESS + RAW/TCP + REALITY + xtls-rprx-vision` as the baseline combination.
 :::
-
-“最全面”不是把所有高级开关都打开，而是理解每个字段是否需要、开启后会改变什么，以及客户端是否必须同步配置。
 
 A complete setup means choosing fields intentionally, not enabling every advanced switch.
 
@@ -31,7 +27,7 @@ A complete setup means choosing fields intentionally, not enabling every advance
 | Listen | Empty for all IPs, `127.0.0.1` for local reverse proxy, Unix socket path when needed | Unix socket listeners should use port `0`. |
 | Port | Prefer `443`, or another open port when occupied | High ports work but look less like ordinary HTTPS. |
 | Total traffic | Usually GB in the 3x-ui UI; `0` means unlimited | Panel quota control, not a protocol-level security field. |
-| Traffic reset | Never for unlimited plans; monthly/weekly for quota plans | Controls quota reset cadence. |
+| Traffic reset | Never for unlimited plans; monthly or weekly for quota plans | Controls quota reset cadence. |
 | Expiry time | Empty or `0` for never expires | Panel-side lifecycle control. |
 
 ## Protocol

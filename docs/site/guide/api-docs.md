@@ -1,6 +1,4 @@
-# API 文档 / API Docs
-
-API 文档页面用于查看面板提供的接口说明和请求示例。
+# API Docs
 
 The API Docs page describes panel endpoints and request examples.
 

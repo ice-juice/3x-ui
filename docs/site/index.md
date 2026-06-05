@@ -4,7 +4,7 @@ layout: home
 hero:
   name: 3x-ui Docs
   text: Modern operator documentation
-  tagline: A clean, bilingual documentation site for managing 3x-ui, Xray, inbounds, clients, nodes, and panel settings.
+  tagline: Clean documentation for managing 3x-ui, Xray, inbounds, clients, nodes, and panel settings.
   image:
     src: /logo.svg
     alt: 3x-ui Docs

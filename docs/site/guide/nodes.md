@@ -1,6 +1,4 @@
-# 节点 / Nodes
-
-节点页面用于管理可部署入站的远程节点和节点状态。
+# Nodes
 
 The Nodes page manages remote nodes that can host inbounds and report node state.
 

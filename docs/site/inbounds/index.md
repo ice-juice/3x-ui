@@ -1,6 +1,4 @@
-# 入站 / Inbounds
-
-入站页面用于创建、管理、导入、导出和查看 Xray 入站配置。
+# Inbounds
 
 The Inbounds page is used to create, manage, import, export, and inspect Xray inbound configurations.
 
@@ -15,4 +13,4 @@ The Inbounds page is used to create, manage, import, export, and inspect Xray in
 
 ## Available Guides
 
-- [Reality 入站配置 / Reality Inbound Configuration](./reality.md)
+- [Reality Inbound Configuration](./reality.md)

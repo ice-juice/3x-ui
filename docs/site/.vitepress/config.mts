@@ -1,8 +1,88 @@
 import { defineConfig } from 'vitepress'
 
+const englishNav = [
+  { text: 'Guide', link: '/guide/system-status' },
+  { text: 'Reality', link: '/inbounds/reality' },
+  { text: 'Wiki', link: 'https://github.com/ice-juice/3x-ui/wiki' },
+  { text: 'GitHub', link: 'https://github.com/ice-juice/3x-ui' }
+]
+
+const englishSidebar = [
+  {
+    text: 'Overview',
+    items: [
+      { text: 'Home', link: '/' },
+      { text: 'System Status', link: '/guide/system-status' }
+    ]
+  },
+  {
+    text: 'Operate',
+    items: [
+      { text: 'Inbounds', link: '/inbounds/' },
+      { text: 'Reality Inbound', link: '/inbounds/reality' },
+      { text: 'Clients', link: '/guide/clients' },
+      { text: 'Groups', link: '/guide/groups' },
+      { text: 'Nodes', link: '/guide/nodes' }
+    ]
+  },
+  {
+    text: 'Configure',
+    items: [
+      { text: 'Panel Settings', link: '/guide/panel-settings' },
+      { text: 'Xray Configuration', link: '/guide/xray-configuration' }
+    ]
+  },
+  {
+    text: 'Integrate',
+    items: [
+      { text: 'API Docs', link: '/guide/api-docs' }
+    ]
+  }
+]
+
+const chineseNav = [
+  { text: '指南', link: '/zh/guide/system-status' },
+  { text: 'Reality', link: '/zh/inbounds/reality' },
+  { text: 'Wiki', link: 'https://github.com/ice-juice/3x-ui/wiki' },
+  { text: 'GitHub', link: 'https://github.com/ice-juice/3x-ui' }
+]
+
+const chineseSidebar = [
+  {
+    text: '概览',
+    items: [
+      { text: '首页', link: '/zh/' },
+      { text: '系统状态', link: '/zh/guide/system-status' }
+    ]
+  },
+  {
+    text: '运维',
+    items: [
+      { text: '入站', link: '/zh/inbounds/' },
+      { text: 'Reality 入站', link: '/zh/inbounds/reality' },
+      { text: '客户端', link: '/zh/guide/clients' },
+      { text: '分组', link: '/zh/guide/groups' },
+      { text: '节点', link: '/zh/guide/nodes' }
+    ]
+  },
+  {
+    text: '配置',
+    items: [
+      { text: '面板设置', link: '/zh/guide/panel-settings' },
+      { text: 'Xray 配置', link: '/zh/guide/xray-configuration' }
+    ]
+  },
+  {
+    text: '集成',
+    items: [
+      { text: 'API 文档', link: '/zh/guide/api-docs' }
+    ]
+  }
+]
+
 export default defineConfig({
   title: '3x-ui Docs',
-  description: 'A bilingual operator guide for the 3x-ui panel.',
+  description: 'Modern operator documentation for the 3x-ui panel.',
   base: '/3x-ui/',
   cleanUrls: true,
   lastUpdated: true,
@@ -11,47 +91,92 @@ export default defineConfig({
     ['meta', { property: 'og:title', content: '3x-ui Docs' }],
     ['meta', { property: 'og:description', content: 'Modern documentation for 3x-ui operators.' }]
   ],
+  locales: {
+    root: {
+      label: 'English',
+      lang: 'en-US',
+      link: '/?lang=en'
+    },
+    zh: {
+      label: '中文',
+      lang: 'zh-CN',
+      link: '/zh/',
+      title: '3x-ui 文档',
+      description: '面向 3x-ui 面板的现代化运维文档。',
+      themeConfig: {
+        nav: chineseNav,
+        sidebar: chineseSidebar,
+        langMenuLabel: '切换语言',
+        darkModeSwitchLabel: '外观',
+        lightModeSwitchTitle: '切换到浅色主题',
+        darkModeSwitchTitle: '切换到深色主题',
+        sidebarMenuLabel: '菜单',
+        returnToTopLabel: '返回顶部',
+        externalLinkIcon: true,
+        outline: {
+          level: [2, 3],
+          label: '本页目录'
+        },
+        docFooter: {
+          prev: '上一页',
+          next: '下一页'
+        },
+        lastUpdated: {
+          text: '更新于',
+          formatOptions: {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+          }
+        },
+        footer: {
+          message: '为 3x-ui 运维人员构建。',
+          copyright: '文档内容遵循仓库许可证。'
+        },
+        search: {
+          provider: 'local',
+          options: {
+            locales: {
+              zh: {
+                translations: {
+                  button: {
+                    buttonText: '搜索',
+                    buttonAriaLabel: '搜索'
+                  },
+                  modal: {
+                    displayDetails: '显示详细列表',
+                    resetButtonTitle: '重置搜索',
+                    backButtonTitle: '关闭搜索',
+                    noResultsText: '没有结果',
+                    footer: {
+                      selectText: '选择',
+                      selectKeyAriaLabel: '回车',
+                      navigateText: '导航',
+                      navigateUpKeyAriaLabel: '上箭头',
+                      navigateDownKeyAriaLabel: '下箭头',
+                      closeText: '关闭',
+                      closeKeyAriaLabel: 'esc'
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: '3x-ui Docs',
-    nav: [
-      { text: 'Guide', link: '/guide/system-status' },
-      { text: 'Reality', link: '/inbounds/reality' },
-      { text: 'Wiki', link: 'https://github.com/ice-juice/3x-ui/wiki' },
-      { text: 'GitHub', link: 'https://github.com/ice-juice/3x-ui' }
-    ],
-    sidebar: [
-      {
-        text: 'Overview',
-        items: [
-          { text: 'Home', link: '/' },
-          { text: 'System Status', link: '/guide/system-status' }
-        ]
-      },
-      {
-        text: 'Operate',
-        items: [
-          { text: 'Inbounds', link: '/inbounds/' },
-          { text: 'Reality Inbound', link: '/inbounds/reality' },
-          { text: 'Clients', link: '/guide/clients' },
-          { text: 'Groups', link: '/guide/groups' },
-          { text: 'Nodes', link: '/guide/nodes' }
-        ]
-      },
-      {
-        text: 'Configure',
-        items: [
-          { text: 'Panel Settings', link: '/guide/panel-settings' },
-          { text: 'Xray Configuration', link: '/guide/xray-configuration' }
-        ]
-      },
-      {
-        text: 'Integrate',
-        items: [
-          { text: 'API Docs', link: '/guide/api-docs' }
-        ]
-      }
-    ],
+    nav: englishNav,
+    sidebar: englishSidebar,
+    langMenuLabel: 'Change language',
+    darkModeSwitchLabel: 'Appearance',
+    lightModeSwitchTitle: 'Switch to light theme',
+    darkModeSwitchTitle: 'Switch to dark theme',
+    sidebarMenuLabel: 'Menu',
+    returnToTopLabel: 'Return to top',
+    externalLinkIcon: true,
     socialLinks: [
       { icon: 'github', link: 'https://github.com/ice-juice/3x-ui' }
     ],

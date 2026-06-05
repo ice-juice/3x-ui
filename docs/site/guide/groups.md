@@ -1,6 +1,4 @@
-# 分组 / Groups
-
-分组页面用于按业务、用户或套餐组织客户端。
+# Groups
 
 The Groups page organizes clients by business case, user group, or plan.
 

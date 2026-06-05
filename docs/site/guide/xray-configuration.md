@@ -1,6 +1,4 @@
-# Xray 配置 / Xray Configuration
-
-Xray 配置页面用于编辑 Xray 基础模板、路由、出站、负载均衡、DNS 和高级 JSON。
+# Xray Configuration
 
 The Xray Configuration page edits Xray basic templates, routing, outbounds, balancers, DNS, and advanced JSON.
 

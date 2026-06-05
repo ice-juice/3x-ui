@@ -1,6 +1,4 @@
-# 面板设置 / Panel Settings
-
-面板设置页面用于管理 3x-ui 面板自身、安全、Telegram 机器人和订阅相关配置。
+# Panel Settings
 
 The Panel Settings page manages the 3x-ui panel itself, security settings, Telegram bot integration, and subscription behavior.
 
