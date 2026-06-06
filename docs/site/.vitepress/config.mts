@@ -2,7 +2,8 @@ import { defineConfig } from 'vitepress'
 
 const englishNav = [
   { text: 'Guide', link: '/guide/system-status' },
-  { text: 'Reality', link: '/inbounds/reality' },
+  { text: 'Deployment Scenarios', link: '/deployment-scenarios/' },
+  { text: 'API', link: '/guide/api-docs' },
   { text: 'Wiki', link: 'https://github.com/ice-juice/3x-ui/wiki' },
   { text: 'GitHub', link: 'https://github.com/ice-juice/3x-ui' }
 ]
@@ -19,17 +20,37 @@ const englishSidebar = [
     text: 'Operate',
     items: [
       { text: 'Inbounds', link: '/inbounds/' },
-      { text: 'Reality Inbound', link: '/inbounds/reality' },
       { text: 'Clients', link: '/guide/clients' },
       { text: 'Groups', link: '/guide/groups' },
       { text: 'Nodes', link: '/guide/nodes' }
     ]
   },
   {
-    text: 'Configure',
+    text: 'Panel Settings',
     items: [
-      { text: 'Panel Settings', link: '/guide/panel-settings' },
-      { text: 'Xray Configuration', link: '/guide/xray-configuration' }
+      { text: 'General', link: '/guide/panel-settings' },
+      { text: 'Security Settings', link: '/guide/security-settings' },
+      { text: 'Telegram Bot', link: '/guide/telegram-bot-settings' },
+      { text: 'Subscription Settings', link: '/guide/subscription-settings' },
+      { text: 'Sub Formats', link: '/guide/subscription-formats' }
+    ]
+  },
+  {
+    text: 'Xray Configuration',
+    items: [
+      { text: 'Basic Configuration', link: '/guide/xray-configuration' },
+      { text: 'Routing Rules', link: '/guide/xray-routing' },
+      { text: 'Outbounds', link: '/guide/xray-outbounds' },
+      { text: 'Balancers', link: '/guide/xray-balancers' },
+      { text: 'DNS', link: '/guide/xray-dns' },
+      { text: 'Advanced Configuration', link: '/guide/xray-advanced' }
+    ]
+  },
+  {
+    text: 'Deployment Scenarios',
+    items: [
+      { text: 'Overview', link: '/deployment-scenarios/' },
+      { text: 'Reality Inbound', link: '/deployment-scenarios/reality-inbound' }
     ]
   },
   {
@@ -42,7 +63,8 @@ const englishSidebar = [
 
 const chineseNav = [
   { text: '指南', link: '/zh/guide/system-status' },
-  { text: 'Reality', link: '/zh/inbounds/reality' },
+  { text: '部署场景', link: '/zh/deployment-scenarios/' },
+  { text: 'API', link: '/zh/guide/api-docs' },
   { text: 'Wiki', link: 'https://github.com/ice-juice/3x-ui/wiki' },
   { text: 'GitHub', link: 'https://github.com/ice-juice/3x-ui' }
 ]
@@ -59,17 +81,37 @@ const chineseSidebar = [
     text: '运维',
     items: [
       { text: '入站', link: '/zh/inbounds/' },
-      { text: 'Reality 入站', link: '/zh/inbounds/reality' },
       { text: '客户端', link: '/zh/guide/clients' },
       { text: '分组', link: '/zh/guide/groups' },
       { text: '节点', link: '/zh/guide/nodes' }
     ]
   },
   {
-    text: '配置',
+    text: '面板设置',
     items: [
-      { text: '面板设置', link: '/zh/guide/panel-settings' },
-      { text: 'Xray 配置', link: '/zh/guide/xray-configuration' }
+      { text: '常规', link: '/zh/guide/panel-settings' },
+      { text: '安全设定', link: '/zh/guide/security-settings' },
+      { text: 'Telegram 机器人', link: '/zh/guide/telegram-bot-settings' },
+      { text: '订阅设置', link: '/zh/guide/subscription-settings' },
+      { text: 'Sub Formats', link: '/zh/guide/subscription-formats' }
+    ]
+  },
+  {
+    text: 'Xray 配置',
+    items: [
+      { text: '基础配置', link: '/zh/guide/xray-configuration' },
+      { text: '路由规则', link: '/zh/guide/xray-routing' },
+      { text: '出站', link: '/zh/guide/xray-outbounds' },
+      { text: '负载均衡', link: '/zh/guide/xray-balancers' },
+      { text: 'DNS', link: '/zh/guide/xray-dns' },
+      { text: '高级配置', link: '/zh/guide/xray-advanced' }
+    ]
+  },
+  {
+    text: '部署场景',
+    items: [
+      { text: '总览', link: '/zh/deployment-scenarios/' },
+      { text: 'Reality 入站', link: '/zh/deployment-scenarios/reality-inbound' }
     ]
   },
   {

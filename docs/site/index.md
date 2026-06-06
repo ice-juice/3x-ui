@@ -3,24 +3,24 @@ layout: home
 
 hero:
   name: 3x-ui Docs
-  text: Modern operator documentation
-  tagline: Clean documentation for managing 3x-ui, Xray, inbounds, clients, nodes, and panel settings.
+  text: Operator documentation that follows the product UI
+  tagline: Practical documentation for managing 3x-ui, Xray, inbounds, clients, nodes, panel settings, deployment scenarios, and API integrations.
   image:
     src: /logo.svg
     alt: 3x-ui Docs
   actions:
     - theme: brand
-      text: Reality Inbound
-      link: /inbounds/reality
+      text: Deployment Scenarios
+      link: /deployment-scenarios/
     - theme: alt
       text: Browse Guide
       link: /guide/system-status
 
 features:
-  - title: Menu-driven structure
-    details: The site follows the real 3x-ui frontend navigation so operators can move from UI labels to configuration details quickly.
-  - title: Reality-first guidance
-    details: The inbound guide explains each Reality field, recommended values, client impact, and Xray versus 3x-ui-specific boundaries.
+  - title: Mirrors the sidebar
+    details: The guide follows the real 3x-ui frontend menu so operators can jump from a UI label to the matching documentation page.
+  - title: Scenario-first deployment
+    details: Deployment scenarios explain which topology to choose before you tune protocol, transport, routing, and subscription details.
   - title: Built for GitHub Pages
     details: VitePress provides search, responsive navigation, dark mode, polished code blocks, and a richer documentation UI than GitHub Wiki.
 ---
@@ -30,19 +30,19 @@ features:
 <div class="doc-grid">
   <a class="doc-card" href="/3x-ui/guide/system-status">
     <strong>System Status</strong>
-    <p>Panel health, Xray runtime state, resources, traffic, and metrics.</p>
+    <p>Host health, Xray runtime state, resource usage, traffic, and metrics.</p>
   </a>
-  <a class="doc-card" href="/3x-ui/inbounds/reality">
+  <a class="doc-card" href="/3x-ui/inbounds/">
+    <strong>Inbounds</strong>
+    <p>Inbound list operations, import/export flows, traffic counters, and client binding.</p>
+  </a>
+  <a class="doc-card" href="/3x-ui/deployment-scenarios/reality-inbound">
     <strong>Reality Inbound</strong>
-    <p>Recommended VLESS + RAW/TCP + REALITY setup and field-by-field impact.</p>
-  </a>
-  <a class="doc-card" href="/3x-ui/guide/clients">
-    <strong>Clients</strong>
-    <p>Subscription users, quotas, expiry, groups, and inbound binding.</p>
+    <p>Public single-node VLESS + RAW/TCP + REALITY deployment baseline.</p>
   </a>
   <a class="doc-card" href="/3x-ui/guide/xray-configuration">
     <strong>Xray Configuration</strong>
-    <p>Routing, outbounds, balancers, DNS, and advanced JSON editing.</p>
+    <p>Basic template, routing, outbounds, balancers, DNS, and advanced JSON editing.</p>
   </a>
 </div>
 
@@ -50,7 +50,7 @@ features:
 
 | Task | Path |
 | --- | --- |
-| Create a Reality node | [Inbounds](/inbounds/) -> [Reality Inbound](/inbounds/reality) -> [Clients](/guide/clients) |
-| Manage subscriptions | [Clients](/guide/clients) -> [Groups](/guide/groups) -> [Panel Settings](/guide/panel-settings) |
-| Troubleshoot runtime | [System Status](/guide/system-status) -> [Xray Configuration](/guide/xray-configuration) -> [Inbounds](/inbounds/) |
-| Build integrations | [API Docs](/guide/api-docs) -> [Panel Settings](/guide/panel-settings) |
+| Create a Reality node | [Deployment Scenarios](/deployment-scenarios/) -> [Reality Inbound](/deployment-scenarios/reality-inbound) -> [Inbounds](/inbounds/) -> [Clients](/guide/clients) |
+| Manage subscription users | [Clients](/guide/clients) -> [Groups](/guide/groups) -> [Subscription Settings](/guide/subscription-settings) -> [Sub Formats](/guide/subscription-formats) |
+| Troubleshoot runtime | [System Status](/guide/system-status) -> [Inbounds](/inbounds/) -> [Xray Advanced Configuration](/guide/xray-advanced) |
+| Build integrations | [API Docs](/guide/api-docs) -> [Security Settings](/guide/security-settings) |
