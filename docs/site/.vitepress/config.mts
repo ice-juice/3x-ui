@@ -129,6 +129,8 @@ export default defineConfig({
   cleanUrls: true,
   lastUpdated: true,
   head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/3x-ui/logo.svg' }],
+    ['link', { rel: 'shortcut icon', type: 'image/svg+xml', href: '/3x-ui/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#0f172a' }],
     ['meta', { property: 'og:title', content: '3x-ui Docs' }],
     ['meta', { property: 'og:description', content: 'Modern documentation for 3x-ui operators.' }]
