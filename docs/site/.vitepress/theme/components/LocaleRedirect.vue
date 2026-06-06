@@ -65,4 +65,6 @@ watchEffect(() => {
 })
 </script>
 
-<template></template>
+<template>
+  <span hidden aria-hidden="true"></span>
+</template>
